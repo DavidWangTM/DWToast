@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff009688" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="13dp"
+            tools:context=".MainActivity">
+
+            <EditText
+                android:id="@+id/editView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test Demo"
+                android:singleLine="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/from_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="From Top"
+                    android:background="@color/btn_background_press"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/from_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="From Bottom"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/btn_background"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/from_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/btn_background"
+                    android:text="From Left"
+                    android:layout_marginLeft="1dp"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/from_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="From Right"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/btn_background"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/to_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="To Top"
+                    android:background="@color/btn_background_press"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/to_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="To Bottom"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/btn_background"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/to_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="To Left"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/btn_background"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/to_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="To Right"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/btn_background"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/statusBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cover Status Bar"
+                    android:background="@color/btn_background_press"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/navBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cover Nav Bar"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/btn_background"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/statusAndNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cover Status and Nav Bar"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/btn_background"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:indeterminate="false"
+                android:max="10"
+                android:progress="1" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duration:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0.5seconds"
+                    android:id="@+id/timeLab" />
+
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/seekBarTension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:indeterminate="false"
+                android:max="300"
+                android:progress="100" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="qcTension:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="100"
+                    android:id="@+id/qcTension" />
+
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/seekBarFriction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:indeterminate="false"
+                android:max="10"
+                android:progress="6" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="qcFriction:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="6"
+                    android:id="@+id/qcFriction" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Notification"
+                android:onClick="showOnclick"
+                android:id="@+id/show" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
