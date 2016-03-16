@@ -1,6 +1,6 @@
 # DWToast
 
-`DWToast` 是一款针对Android状态栏和标题栏提示的开源工程。
+`DWToast` 是一款针对Android状态栏和标题栏提示工程。
 
 ![demo](status.gif)
 
@@ -54,6 +54,6 @@
         }
 ```
 
-#insert
+#Insert
 
 `DWToast`有引用`rebound` 和 `systembartin` 库 具体引用位置在build.gradle内容中
